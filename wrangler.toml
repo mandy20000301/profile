@@ -1,6 +1,6 @@
 # Top-level configuration
 name = "my-worker"
-main = "test"
+main = "test/index.html"
 compatibility_date = "2023-08-20"
 
 workers_dev = false

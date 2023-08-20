@@ -1,0 +1,9 @@
+# Top-level configuration
+name = "my-worker"
+main = "test"
+compatibility_date = "2023-08-20"
+
+workers_dev = false
+route = { pattern = "mandy2000.com/*", zone_name = "mandy2000.com" }
+
+

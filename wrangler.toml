@@ -1,7 +1,7 @@
 name = "mandy2000"
 main = "./.output/server/index.mjs"
 workers_dev = false
-compatibility_date = "2023-05-15"
+compatibility_date = "2023-08-20"
 route = { pattern = "mandy2000.com", custom_domain = true }
 
 [site]

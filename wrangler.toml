@@ -1,9 +1,11 @@
-name = "my-worker"
+name = "mandy2000"
 main = "./.output/server/index.mjs"
-workers_dev = true
-compatibility_date = "2023-08-20"
+workers_dev = false
+compatibility_date = "2023-05-15"
+route = { pattern = "mandy2000.com", custom_domain = true }
 
 [site]
 bucket = ".output/public"
 
-
+[vars]
+NUXT_PUBLIC_BASE_URL = "https://mandy2000.com"

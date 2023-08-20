@@ -1,6 +1,6 @@
 # Top-level configuration
 name = "my-worker"
-main = "test/index.html"
+main = ".output/server/index.mjs"
 compatibility_date = "2023-08-20"
 
 workers_dev = false

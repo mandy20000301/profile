@@ -1,0 +1,1 @@
+import{_ as e,c as t,o,a as c}from"./entry.73e99350.js";const s={},a=c("h1",{class:"text-[30px] text-blue-800"},"about",-1),n=[a];function _(r,l){return o(),t("div",null,n)}const u=e(s,[["render",_]]);export{u as default};

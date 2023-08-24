@@ -1,5 +1,9 @@
 <template>
-    <div>
-        <h1>Mandy</h1>
-    </div>
+  <div>
+    <h1>Mandy</h1>
+    <h2>Mandy</h2>
+    <h3>Mandy</h3>
+    <h4>Mandy</h4>
+    <p>Mandy</p>
+  </div>
 </template>

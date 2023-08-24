@@ -8,9 +8,18 @@ module.exports = {
     "./nuxt.config.{js,ts}",
     "./app.vue",
   ],
+  presets: [
+    require("./vender/tailwindcss/project-preset.js"),
+],
   theme: {
-    extend: {},
+    container: {
+      center: true,
   },
+  },
+  corePlugins: {
+    // aspectRatio: false,
+    container: false,
+},
   plugins: [],
 }
 

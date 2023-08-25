@@ -26,9 +26,19 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   postcss: {
     plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
+        // doc: https://www.npmjs.com/package/postcss-mixins
+        "postcss-mixins": {},
+        // doc: https://www.npmjs.com/package/postcss-simple-vars
+        "postcss-simple-vars": { silent: true },
+        // doc: https://www.npmjs.com/package/postcss-each
+        "postcss-each": {},
+        "tailwindcss/nesting": {},
+        tailwindcss: {},
+        // doc: https://www.npmjs.com/package/autoprefixer
+        autoprefixer: {},
+        // doc: https://www.npmjs.com/package/postcss-easings
+        "postcss-easings": {},
     },
-  },
+},
   css: ['~/assets/css/main.css'],
 })

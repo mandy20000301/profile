@@ -3,7 +3,7 @@
 } */
 @layer components {
     :root{
-        @apply font-body;
+        @apply font-body text-primary-02;
     }
     h1{
         @apply text-h1 lg:text-h1-d;

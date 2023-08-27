@@ -7,8 +7,6 @@
                 <SharedExpCard :info="item" :key="item.id" />
             </SwiperSlide>
         </Swiper>
-          <!-- deco line -->
-          <!-- <div class="w-[5px] rounded-full h-[200px] bg-primary-03 absolute bottom-[50px] right-4 "></div> -->
         <!-- deco text -->
         <div class="absolute bottom-2 right-4  text-right">
             <p class="text-primary-02 text-[24px] font-bold">MY</p>

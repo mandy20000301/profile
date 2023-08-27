@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div v-if="password == 2000">
-    <!-- <div v-if="true"> -->
+    <!-- <div v-if="password == 2000"> -->
+    <div v-if="true">
       <HomeBanner />
       <HomeAbout/>
       <HomeMyExperience/>

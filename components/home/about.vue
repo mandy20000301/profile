@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center container border border-[blue] mb-[30px] md:mb-20">
+    <div class="text-center container mb-[30px] md:mb-20">
         <h2 class="mb-6">{{ aboutInfo.title }}</h2>
         <p class="text-grey-700">{{ aboutInfo.description }}</p>
     </div>

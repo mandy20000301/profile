@@ -17,6 +17,9 @@
     h4{
         @apply text-h4 lg:text-h4-d;
     }
+    h5{
+        @apply text-h5 lg:text-h5-d;
+    }
     p{
         @apply text-p lg:text-p-d;
     }

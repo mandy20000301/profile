@@ -1,6 +1,6 @@
 <template>
     <div class="bg-primary-01 rounded-t-[30px] reveal overflow-hidden">
-        <div class="container rounded-t-[30px] pt-[50px] pb-[100px] lg:pt-[130px] lg:pb-[200px] relative">
+        <div class="container rounded-t-[30px] pt-[50px] pb-[100px] lg:pt-[130px] lg:pb-[200px] relative hidden-content">
             <Swiper :slides-per-view="auto" :space-between="24" :speed="600" :loop="false" :initial-slide="0"
                 :slide-to-clicked-slide="true" @swiper="initSwiper"
                 class="relative !mx-0 h-max w-[320px] !overflow-visible">

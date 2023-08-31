@@ -1,6 +1,7 @@
 @import url('assets/css/layout/grid.css');
 @import url('assets/css/layout/font.css');
 @import url('assets/css/layout/button.css');
+@import url('assets/css/layout/common.css');
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";

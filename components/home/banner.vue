@@ -1,13 +1,13 @@
 <template>
     <div class="relative  mb-[60px] md:mb-[100px] xl:mb-[130px]">
-        <img src="/image/yellow_bg.svg" class="w-1/2 md:w-1/3 block absolute top-0 left-0 z-[-1]" />
-        <img src="/image/black_bg.svg" class="w-[15%] md:w-[12%] xl:w-[14%] block absolute bottom-[36%] md:-bottom-[27%] right-0 z-[-1]" />
+        <img src="/image/yellow_bg.svg" class="w-1/2 md:w-1/3 block absolute top-0 left-0 " />
+        <img src="/image/black_bg.svg" class="w-[15%] md:w-[12%] xl:w-[14%] block absolute bottom-[36%] md:-bottom-[27%] right-0" />
         <div class="container md:flex md:flex-wrap items-center pt-[20px] md:pt-[88px]">
             <div class="w-full mb-[30px] md:mb-0  md:w-1/2">
                 <div class="w-[90%] max-w-[300px] md:w-[60%] md:max-w-none mx-auto">
                     <div class="w-fit h-fit relative">
                         <div class="aspect-square overflow-hidden  rounded-full relative">
-                            <img src="/image/mandy.png" class="object-cover" />
+                            <img src="/image/mandy.png" alt="李欣恬 Mandy" class="object-cover" />
                         </div>
                         <img src="/image/ellipse.svg" class="hidden md:block w-[50%] absolute -right-[8%] -top-[8%]  " />
                     </div>

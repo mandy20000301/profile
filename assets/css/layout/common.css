@@ -1,0 +1,50 @@
+.reveal {
+    position: relative;
+    opacity: 1;
+    .hidden-content {
+        opacity: 0;
+        animation: textHidden 0.1s 1s forwards;
+    }
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        animation-fill-mode: both;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        z-index: 10;
+    }
+    &::before{
+        animation: reveal 1.8s ease;
+        @apply bg-primary-02;
+    }
+    &::after{
+        @apply bg-primary-01;
+      animation: reveal 1s .6s ease;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        width: 0;
+        left: 0;
+    }
+    65% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes textHidden {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

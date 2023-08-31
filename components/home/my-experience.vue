@@ -1,16 +1,19 @@
 <template>
     <div class="overflow-hidden">
         <SharedTabBox :info="tabList" @update-activeId="updateActiveId($event)" class="mb-7 lg:mb-16" />
-        <div class="bg-primary-01 rounded-t-[30px]">
-            <HomeExperienceDesktop :info="expList" v-if="screen === 'desktop'"/>
-            <HomeExperienceMobile :info="expList" v-else/>
+        <!-- <div class="bg-primary-01 rounded-t-[30px]"> -->
+        <!-- <div class="bg-[#FFF] rounded-t-[30px]"> -->
+        <div>
+            <HomeExperienceDesktop :info="expList" v-if="screen === 'desktop' && activeId == 'experience'" />
+            <HomeExperienceMobile :info="expList" v-else-if="screen === 'mobile' && activeId == 'experience'" />
+            <HomeExperienceSkill v-else/>
         </div>
     </div>
 </template>
 <script setup>
 const { width: winW } = useWindowSize();
-const screen = computed(()=>
-    winW.value > 1200?'desktop':'mobile'
+const screen = computed(() =>
+    winW.value > 1200 ? 'desktop' : 'mobile'
 )
 const tabList = ref(
     [

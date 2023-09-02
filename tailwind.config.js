@@ -20,6 +20,8 @@ module.exports = {
     // aspectRatio: false,
     container: false,
 },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+  ],
 }
 

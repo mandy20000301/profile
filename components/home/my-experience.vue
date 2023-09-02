@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden">
+    <div class="overflow-hidden mb-[120px]">
         <SharedTabBox :info="tabList" @update-activeId="updateActiveId($event)" class="mb-7 lg:mb-16" />
         <div>
             <HomeExperienceDesktop :info="expList" v-if="screen === 'desktop' && activeId == 'experience'" />

@@ -6,8 +6,8 @@
         <div class="container md:flex md:flex-wrap items-center pt-[20px] md:pt-[88px]">
             <div class="w-full mb-[30px] md:mb-0  md:w-1/2">
                 <div class="w-[90%] max-w-[300px] md:w-[60%] md:max-w-none mx-auto">
-                    <div class="w-fit h-fit relative">
-                        <div class="aspect-square overflow-hidden  rounded-full relative shadow-xl">
+                    <div class="w-full relative">
+                        <div class="aspect-w-1 aspect-h-1 overflow-hidden  rounded-full relative shadow-xl">
                             <img src="/image/mandy.png" alt="李欣恬 Mandy" class="object-cover" />
                         </div>
                         <img src="/image/ellipse.svg" class="hidden md:block w-[50%] absolute -right-[8%] -top-[8%]" />
@@ -20,13 +20,13 @@
                 <div class="flex items-center flex-wrap w-fit mx-auto md:w-full">
                     <a href="mailto:c26931230@gmail.com" target="_blank"  class="custom-btn rounded-full bg-primary-02 w-[130px] py-[5px] md:py-[8px] text-primary-03 relative mr-3 hover:bg-primary-01">
                         <span class="icon">
-                            <NuxtIcon name="arr-right" class="text-primary-02 text-center block w-fit mx-auto" />
+                            <NuxtIcon name="arr-right" class="text-primary-03 text-center block w-fit mx-auto" />
                         </span>
                         <span class="txt">Contact Me</span>
                     </a>
                     <a :href="i.link" target="_blank" class="btn-i-primary--sm md:btn-i-primary--md mr-3 group"
                         v-for="i in contact_info" :key="i.id">
-                        <NuxtIcon :name="i.icon" class="text-[white] group-hover:text-primary-02 z-[2] relative" />
+                        <NuxtIcon :name="i.icon" class="text-[white] group-hover:text-primary-03 z-[2] relative" />
                     </a>
                   
                 </div>
@@ -50,6 +50,7 @@ const contact_info = ref([
 </script>
 <style scoped lang="postcss">
 .custom-btn{
+    @apply overflow-hidden;
     .txt{
         @apply translate-x-[0%] text-center relative block  opacity-100;
         transition: all .2s ease-out;

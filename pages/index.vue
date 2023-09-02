@@ -5,6 +5,7 @@
       <HomeBanner />
       <HomeAbout/>
       <HomeMyExperience/>
+      <HomeMyWorks/>
     </div>
     <div v-else class="flex items-center justify-center h-screen">
       <div class=" p-20 bg-primary-01 rounded">

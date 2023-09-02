@@ -90,7 +90,7 @@
             &:hover{
                 &::after{
                 content: '';
-                @apply  w-[100%] h-[100%] transition-[1s] z-[0];
+                @apply  w-[110%] h-[110%] transition-[1s] z-[0];
             } 
         }
         }

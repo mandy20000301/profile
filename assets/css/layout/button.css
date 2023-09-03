@@ -56,7 +56,7 @@
     }
 }
 .btn-i {
-    &-primary {
+    &-primary, &-secondary {
         &--lg,
         &--md,
         &--sm {
@@ -104,7 +104,33 @@
             @apply p-2;
         }
     }
-    &-primary {
+    &-secondary {
+        &--lg,
+        &--md,
+        &--sm {
+            @apply text-[white] relative;
+            &::after{
+                content: '';
+                @apply absolute block rounded-full bg-primary-03 w-[0%] h-[0%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[1s];
+            } 
+            &:hover{
+                &::after{
+                content: '';
+                @apply  w-[110%] h-[110%] transition-[1s] z-[0];
+            } 
+        }
+        }
+        &--lg {
+            @apply p-[14px];
+        }
+        &--md {
+            @apply p-2.5;
+        }
+        &--sm {
+            @apply p-2;
+        }
+    }
+    &-primary, &-secondary {
         &--lg,
         &--md,
         &--sm {

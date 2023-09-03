@@ -3,7 +3,7 @@
         <Transition name="fade">
             <div class="min-h-[100vh] fixed flex  items-center justify-center top-0 left-0 w-full z-[1001] bg-[#00000050]"
                 v-show="isOpen">
-                <div class="bg-primary-03 p-10 rounded-[10px] w-[50%] relative">
+                <div class="bg-primary-03 p-10 rounded-[10px] w-[98%] md:w-[50%] relative">
                     <button @click="$emit('close-popup')" class="absolute top-[10%] lg:top-[5%] right-[5%]">
                         <NuxtIcon name="cross" class="w-fit cursor-pointer  text-white lg:text-[19px]" />
                     </button>

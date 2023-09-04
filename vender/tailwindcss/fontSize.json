@@ -47,12 +47,20 @@
             "fontWeight": 600
         }
     ],
-    "p-b-d": [
-        "18px",
+    "p2-d": [
+        "16px",
         {
             "lineHeight": "1.5",
             "letterSpacing": 0,
-            "fontWeight": 700
+            "fontWeight": 600
+        }
+    ],
+    "p3-d": [
+        "14px",
+        {
+            "lineHeight": "1.5",
+            "letterSpacing": 0,
+            "fontWeight": 500
         }
     ],
     "h1": [
@@ -103,12 +111,20 @@
             "fontWeight": 600
         }
     ],
-    "p-b": [
-        "17px",
+    "p2": [
+        "14px",
         {
             "lineHeight": "1.5",
             "letterSpacing": "0.02",
-            "fontWeight": 700
+            "fontWeight": 400
+        }
+    ],
+    "p3": [
+        "12px",
+        {
+            "lineHeight": "1.5",
+            "letterSpacing": "0.02",
+            "fontWeight": 400
         }
     ]
 }

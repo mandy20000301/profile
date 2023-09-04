@@ -1,26 +1,26 @@
 <template>
     <Teleport to="body">
         <Transition name="fade">
-            <div class="min-h-[100vh] fixed flex  items-center justify-center top-0 left-0 w-full z-[1001] bg-[#00000050]"
+            <div class="min-h-[100vh] fixed flex  items-center justify-center top-0 left-0 w-full z-[1001] bg-primary-01"
                 v-show="isOpen">
-                <div class="bg-primary-03 p-10 rounded-[10px] w-[98%] md:w-[50%] relative">
+                <p v-if="!info?.url"
+                    class="bg-primary-02 w-fit px-3 py-1 text-center text-[14px] absolute left-0 top-[10%] text-primary-03 z-[100]">
+                    即將上架</p>
+                <div class="bg-primary-03 p-10  w-[100%] relative  min-h-fit max-h-[90vh]  overflow-y-auto scroll-bar">
                     <button @click="$emit('close-popup')" class="absolute top-[10%] lg:top-[5%] right-[5%]">
                         <NuxtIcon name="cross" class="w-fit cursor-pointer  text-white lg:text-[19px]" />
                     </button>
-                    <h3 class="text-center">{{ info?.title }}</h3>
-                    <div class="mb-7">
-                        <h4 class="mb-2">網站網址: </h4>
-                        <p>尚未上架</p>
+
+                    <div class="relative z-[10]">
+                        <h3 class="text-center mb-5 text-primary-04">{{ info?.title }}</h3>
+                        <p class="mb-4 text-p2-d">{{ info?.description }}</p>
                     </div>
-                    <div class="mb-7">
-                        <h4 class="mb-2">網站描述:</h4>
-                        <p>本網站客戶為合和實業有限公司，為購物商場網站，呈現店家及活動內容為主。</p>
+                    <div class="flex items-center flex-wrap">
+                        <p class="w-fit mr-2 text-p3-d text-grey-500" v-for="i in info?.skill" :key="i">#{{ i }}
+                        </p>
                     </div>
-                    <div class="mb-7">
-                        <h4 class="mb-2">負責項目：</h4>
-                        <ul>
-                            <li class="text-p md:text-p-d" v-for="i in 5" :key="i">About Hopewell Cluster</li>
-                        </ul>
+                    <div class="w-fit ml-auto mt-2" v-if="info?.url">
+                        <SharedSquareBtn text="VIEW MORE" :link="info?.url"/>
                     </div>
                 </div>
             </div>
@@ -55,11 +55,14 @@ const props = defineProps({
     @apply opacity-0;
 }
 
-ul {
-    @apply list-disc pl-5;
 
-    @screen lg {
-        @apply text-[18px];
-    }
+.scroll-bar::-webkit-scrollbar {
+    width: 6px;
+    background-color: #CFD7E0;
+}
+
+/* Track */
+.scroll-bar::-webkit-scrollbar-track {
+    background-color: #F5F6F7;
 }
 </style>

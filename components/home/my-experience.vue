@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden mb-[120px]">
+    <div class="overflow-hidden ">
         <SharedTabBox :info="tabList" @update-activeId="updateActiveId($event)" class="mb-7 lg:mb-16" />
         <div>
             <HomeExperienceDesktop :info="expList" v-if="screen === 'desktop' && activeId == 'experience'" />
@@ -52,6 +52,6 @@ const expList = ref([
         desc: '大四時，我修了Excel VBA 及 Python 網路爬蟲課程，發現自己對程式語言很有興趣，為了更了解網路爬蟲，我認為要熟悉網頁架構，因此我自學了HTML及CSS，覺得非常有趣，於是我決定畢業後進入緯育Tibame 學習前端工程師所需要的技能。'
     }
 
-])
+]);
 
 </script>     

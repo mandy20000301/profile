@@ -19,7 +19,7 @@
             :centeredSlides="false"
             :slide-to-clicked-slide="true" 
             @swiper="initSwiper"
-            class="w-full lg:!pt-[40px] border">
+            class="w-full lg:!pt-[40px]">
                 <SwiperSlide v-for="item in info" :key="item.id" class="swiper-slide">
                     <SharedExpCard :info="item" :key="item.id" />
                 </SwiperSlide>

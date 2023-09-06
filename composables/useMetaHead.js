@@ -1,8 +1,7 @@
-export const useMetaHead = ({ title = "", description = "", image = "" ,keywords=""}) => {
+export const useMetaHead = ({ title = "", description = "", image = "" }) => {
     const myTitle = ref(title);
     const myDesc = ref(description);
     const myImage = ref(image);
-    const myKeywords = ref(keywords);
 
     const headTitle = computed(() => {
         return myTitle.value ? { title: myTitle.value, } : null;
@@ -30,11 +29,6 @@ export const useMetaHead = ({ title = "", description = "", image = "" ,keywords
                     hid: "og:image:alt",
                     property: "og:image:alt",
                     content: myTitle.value,
-                },
-                {
-                    hid: "keywords",
-                    property: "keywords",
-                    content: myKeywords.value,
                 },
             ]
             : [];

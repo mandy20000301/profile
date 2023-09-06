@@ -1,6 +1,6 @@
 <template>
     <div class="overflow-hidden py-[60px] md:py-[120px] bg-primary-02" id="works">
-        <div class="container" v-fade:up>
+        <div class="container">
             <h2 class="mb-5 text-primary-01">作品集</h2>
         </div>
         <!-- swiper -->

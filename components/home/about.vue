@@ -1,7 +1,7 @@
 <template>
-    <div class="text-center container mb-[30px] md:mb-20" id="about">
-        <h2 class="mb-6" v-fade:up>{{ aboutInfo.title }}</h2>
-        <p class="text-grey-700" v-fade:up>{{ aboutInfo.description }}</p>
+    <div class="text-center container mb-[30px] md:mb-20" id="about" v-fade:up>
+        <h2 class="mb-6">{{ aboutInfo.title }}</h2>
+        <p class="text-grey-700">{{ aboutInfo.description }}</p>
     </div>
 </template>
 <script setup>

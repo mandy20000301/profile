@@ -14,7 +14,7 @@ export default defineNuxtConfig({
                 {
                     rel: "icon",
                     type: "image/x-icon",
-                    href: "/image/favicon.ico",
+                    href: "/image/mandy_logo.png",
                 },
                 {
                     rel: "stylesheet",

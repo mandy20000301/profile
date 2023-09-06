@@ -108,6 +108,14 @@
         {
             "lineHeight": "1.5",
             "letterSpacing": "0.02",
+            "fontWeight": 500
+        }
+    ],
+    "p-b": [
+        "16px",
+        {
+            "lineHeight": "1.5",
+            "letterSpacing": "0.02",
             "fontWeight": 600
         }
     ],

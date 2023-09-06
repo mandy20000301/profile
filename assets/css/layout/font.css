@@ -1,6 +1,3 @@
-/* :root{
-    @apply font-body;
-} */
 @layer components {
     :root{
         @apply font-body text-primary-02;

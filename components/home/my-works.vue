@@ -1,10 +1,10 @@
 <template>
-    <div class="overflow-hidden py-[60px] md:py-[120px] bg-primary-02">
-        <div class="container">
+    <div class="overflow-hidden py-[60px] md:py-[120px] bg-primary-02" id="works">
+        <div class="container" v-fade:up>
             <h2 class="mb-5 text-primary-01">作品集</h2>
         </div>
         <!-- swiper -->
-        <div class="container-left">
+        <div class="container-left" v-fade:up>
             <Swiper :slides-per-view="1.2" :space-between="24" :breakpoints="{
                 '768': {
                     slidesPerView: 1.8,

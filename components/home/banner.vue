@@ -1,5 +1,5 @@
 <template>
-    <div class="relative  mb-[60px] md:mb-[100px] xl:mb-[130px]">
+    <div class="relative pt-[66px] md:pt-0 mb-[60px] md:mb-[100px] xl:mb-[130px]">
         <img src="/image/yellow_bg.svg" class="w-1/2 md:w-1/3 block absolute top-0 left-0 " />
         <img src="/image/black_bg.svg"
             class="w-[15%] md:w-[12%] xl:w-[14%] block absolute bottom-[36%] md:-bottom-[27%] right-0" />

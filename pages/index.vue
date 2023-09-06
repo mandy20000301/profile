@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#F9F6FF]">
+  <div class="bg-[#fff]">
     <!-- <div v-if="password == 2000"> -->
     <div v-if="true">
       <HomeBanner />

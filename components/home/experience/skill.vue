@@ -1,11 +1,25 @@
 <template>
-    <div class="bg-primary-03 rounded-t-[30px] shadow-lg reveal overflow-hidden">
-        <div class="py-[50px] lg:py-[100px] flex items-center justify-between  container relative  ">
-            <img src="/image/skill.png" class="w-full hidden-content" alt="frontend skills">
-            <!-- deco text -->
-            <div class="absolute bottom-2 right-4 text-right hidden-content">
-                <p class="text-primary-02 text-[24px] xl:text-[40px] font-bold">MY <span class="text-primary-01">SKILL</span></p>
+    <div class="container pb-[60px] md:pb-[120px]" v-fade:reveal>
+        <div class="grid grid-cols-4 gap-8 md:grid-cols-5 md:gap-x-10 md:gap-y-10 w-[80%] lg:w-[60%] mx-auto hidden-content">
+            <div class=" flex items-center justify-center" v-for="(i,idx) in skillsArr" :key="`${i}-${idx}`" v-fade:in >
+                <img :src="`/image/skills/${i}.png`" :alt="i" class="  " >
             </div>
         </div>
     </div>
 </template>
+<script setup>
+    const logos = ref([
+        {
+            id:'html',
+            title:'html',
+            image:'html'
+        },
+        {
+            id:'css',
+            title:'css',
+            image:'css'
+        },
+    ]);
+    const skillsArr = ref(['html','css1','javascript','rwd','vue','nuxt','php','mysql','pinia','jquery','react','figma','git','github','sourcetree','postman','bitbucket','tailwindcss','sass','bootstrap']);
+    const arr = ref([...logos.value,...logos.value,...logos.value,...logos.value])
+</script>

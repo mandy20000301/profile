@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-primary-01 rounded-t-[30px] reveal overflow-hidden">
+    <div class="bg-primary-01 rounded-t-[30px] reveal overflow-hidden" v-fade:reveal>
         <div class="container-left rounded-t-[30px] pt-[50px] pb-[100px] lg:pt-[130px] lg:pb-[200px] relative hidden-content">
             <Swiper 
             :slides-per-view="1.2" 

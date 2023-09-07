@@ -17,6 +17,31 @@ export default defineNuxtConfig({
                     href: "mandy_logo.png",
                 },
                 {
+                    rel: "apple-touch-icon-precomposed",
+                    sizes: "57x57",
+                    href: "/favicon/apple-icon-57x57.png",
+                },
+                {
+                    rel: "apple-touch-icon-precomposed",
+                    sizes: "72x72",
+                    href: "/favicon/apple-icon-72x72.png",
+                },
+                {
+                    rel: "apple-touch-icon",
+                    sizes: "114x114",
+                    href: "/favicon/apple-icon-114x114.png",
+                },
+                {
+                    rel: "apple-touch-icon-precomposed",
+                    sizes: "144x144",
+                    href: "/favicon/apple-icon-144x144.png",
+                },
+                {
+                    rel: "apple-touch-icon-precomposed",
+                    sizes: "180x180",
+                    href: "/favicon/apple-icon-180x180.png",
+                },
+                {
                     rel: "stylesheet",
                     href: "https://use.typekit.net/xew7hma.css",
                 },

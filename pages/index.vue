@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheHeder :info="headerdata"/>
+    <TheHeader :info="headerdata"/>
     <HomeBanner :info="bannerInfo"/>
     <HomeAbout :info="aboutInfo"/>
     <HomeMyExperience :info="expAndSkillInfo"/>

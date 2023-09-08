@@ -1,14 +1,14 @@
 <template>
     <div class="text-center container mb-[30px] md:mb-20" id="about" v-fade:up>
-        <h2 class="mb-6">{{ aboutInfo.title }}</h2>
-        <p class="text-grey-700">{{ aboutInfo.description }}</p>
+        <h2 class="mb-6">{{ info?.title }}</h2>
+        <p class="text-grey-700">{{ info?.description }}</p>
     </div>
 </template>
 <script setup>
-const aboutInfo = ref(
-    {
-        title:'關於我',
-        description:'您好，我是李欣恬，很高興有機會讓您認識我。過去半年期間，我在沙拉互動有限公司擔任前端工程師，參與5個專案的開發及維護。這些專案涵蓋不同類型及規模，主要使用Nuxt2及3開發。在過去工作經驗中，我與產品經理、後端工程師及設計師密切合作，以實現完美的網站效果。我能理解客戶的需求，做出有創意、美感及有良好使用者體驗的網站。我相信我過去的經歷，能滿足您團隊的需求，期待我們能一起做出另人滿意的前端產品！'
-    }
-)
+const props = defineProps({
+    info: {
+        type: Object,
+        default: () => {{}},
+    },
+});
 </script>

@@ -1,18 +1,21 @@
 <template>
   <div>
-    <TheHeder />
-    <HomeBanner />
-    <HomeAbout />
-    <HomeMyExperience />
-    <HomeMyWorks />
+    <TheHeder :info="headerdata"/>
+    <HomeBanner :info="bannerInfo"/>
+    <HomeAbout :info="aboutInfo"/>
+    <HomeMyExperience :info="expAndSkillInfo"/>
+    <HomeMyWorks :info="worksInfo"/>
   </div>
 </template>
 <script setup>
-const seo = ref({
-  title: "李欣恬 | 前端工程師",
-  description: '前端工程師-李欣恬 Mandy Li 的個人網站',
-  image: 'https://mandy2000.com/image/mandy_logo.png',
-})
+const { data: page } = await useApiFetch("page/homepage");
+const seo = computed(()=> page.value.data.seo);
+const headerdata = computed(()=> page.value.data.headerInfo.items);
+const bannerInfo = computed(()=> page.value.data.bannerInfo);
+const aboutInfo = computed(()=> page.value.data.aboutInfo);
+const expAndSkillInfo = computed(()=> page.value.data.experienceAndSkill);
+const worksInfo = computed(()=> page.value.data.worksInfo);
+
 useMetaHead({
   ...seo.value,
 });

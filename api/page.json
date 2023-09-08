@@ -1,0 +1,7 @@
+{
+    "homepage": {
+        "url": "pages/home",
+        "isLocal": true,
+        "method": "get"
+    }
+}

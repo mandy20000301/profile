@@ -1,6 +1,7 @@
 <template>
     <div class=" w-full fixed top-0 left-0 z-[1000] py-5" :class="isScrolling? 'bg-primary-03/80':''">
-        <div class="container">
+        <div class="container flex items-end justify-between flex-wrap">
+            <img src="/logo.svg" alt="Mandy's Web" class="w-[100px] md:w-[140px]">
             <div class="flex item-center flex-wrap w-fit ml-auto">
                 <button class="w-fit mr-6 last-of-type:mr-0 text-p-b md:text-h5 hover:opacity-80" v-for="i in headerdata" :key="i.id" @click="scrollToId(i.id)">{{ i.title }}</button>
             </div>

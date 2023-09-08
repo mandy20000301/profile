@@ -16,7 +16,8 @@
                 },
             }" :speed="600" :initial-slide="0" :slide-to-clicked-slide="false" @swiper="initSwiper" class="w-[100%]">
                 <SwiperSlide v-for="item in works_info" :key="item.id" class="swiper-slide">
-                    <HomeWorksCard :info="item"/>
+                    <HomeWorksIosCard :info="item" v-if="isSafari" />
+                    <HomeWorksCard :info="item" v-else />
                 </SwiperSlide>
             </Swiper>
             <div class="flex items-center justify-between w-fit mt-[30px]">
@@ -100,4 +101,11 @@ const isBeginning = computed(() =>
 const isEnd = computed(() =>
     mySwiper?.value?.isEnd ?? null
 );
+const isSafari = ref(false);
+onMounted(() => {
+    const userAgent = navigator.userAgent;
+    if (userAgent.indexOf('Safari') !== -1 && userAgent.indexOf('Chrome') === -1) {
+        isSafari.value = true;
+    }
+});
 </script>

@@ -14,7 +14,7 @@ export default defineNuxtConfig({
                 {
                     rel: "icon",
                     type: "image/x-icon",
-                    href: "mandy_logo.png",
+                    href: "/favicon.ico",
                 },
                 {
                     rel: "apple-touch-icon-precomposed",

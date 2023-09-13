@@ -22,6 +22,48 @@ export default defineNuxtConfig({
                     href: "https://mandy2000.com/mandy_logo.png",
                 },
                 {
+                    rel: "icon",
+                    type: "image/png",
+                    sizes: "16x16",
+                    href: "/favicon/apple-icon-16x16.png",
+                },
+                {
+                    rel: "icon",
+                    type: "image/png",
+                    sizes: "32x32",
+                    href: "/favicon/apple-icon-32x32.png",
+                },
+                {
+                    rel: "icon",
+                    type: "image/png",
+                    sizes: "57x57",
+                    href: "/favicon/apple-icon-57x57.png",
+                },
+                {
+                    rel: "icon",
+                    type: "image/png",
+                    sizes: "72x72",
+                    href: "/favicon/apple-icon-72x72.png",
+                },
+                {
+                    rel: "icon",
+                    type: "image/png",
+                    sizes: "114x114",
+                    href: "/favicon/apple-icon-114x114.png",
+                },
+                {
+                    rel: "icon",
+                    type: "image/png",
+                    sizes: "144x144",
+                    href: "/favicon/apple-icon-144x144.png",
+                },
+                {
+                    rel: "icon",
+                    type: "image/png",
+                    sizes: "180x180",
+                    href: "/favicon/apple-icon-180x180.png",
+                },
+                {
                     rel: "apple-touch-icon-precomposed",
                     sizes: "57x57",
                     href: "/favicon/apple-icon-57x57.png",

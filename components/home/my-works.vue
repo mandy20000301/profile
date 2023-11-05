@@ -36,6 +36,14 @@
 <script setup>
 const works_info = ref([
     {
+        id: 'hopewell',
+        title: 'Hopewell Cluster',
+        image: '/image/works/hopewell.png',
+        url: 'https://www.hopewellcluster.com/',
+        description: '本網站客戶為合和實業有限公司，為購物商場網站，呈現店家及活動內容為主。',
+        skill: ['Vue.js', 'Nuxt3', 'Tailwind.css']
+    },
+    {
         id: 'airside',
         title: 'Airside',
         image: '/image/works/airside_logo.png',
@@ -66,14 +74,6 @@ const works_info = ref([
         url: 'https://tibamef2e.com/cgd103/g2/',
         description: '本網站為團體專題作品。在近年快時尚的風潮中，成衣製造一直有生產過剩的問題，一旦衣服過季時就會造成存貨過多，帶來服飾滯銷問題，造成生產資源的浪費。 為了解決剩餘服飾問題，我們提供造型師搭配服務，將過剩衣服重新搭配，並幫助消費者找到自己的風格，達到資源有效利用。',
         skill: ['HTML', 'CSS', 'JavaScript', 'SCSS', 'Vue.js', 'PHP', 'My SQL']
-    },
-    {
-        id: 'hopewell',
-        title: 'Hopewell Cluster',
-        image: '/image/works/hopewell.png',
-        url: null,
-        description: '本網站客戶為合和實業有限公司，為購物商場網站，呈現店家及活動內容為主。',
-        skill: ['Vue.js', 'Nuxt3', 'Tailwind.css']
     },
     {
         id: 'nft',

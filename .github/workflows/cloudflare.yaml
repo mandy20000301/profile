@@ -33,10 +33,10 @@ jobs:
 
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: npm
+        run: yarn
 
       - name: Build
-        run: npm run build
+        run: yarn build
         env:
           NITRO_PRESET: cloudflare
 
